@@ -1,4 +1,4 @@
-import Head from "next/Head";
+// import Head from "next/Head";
 import styled from 'styled-components';
 import ChatScreen from '../../components/ChatScreen';
 import Sidebar from '../../components/Sidebar';
@@ -11,9 +11,6 @@ function Chat({ chat , messages }) {
 
     return (
         <Container>
-            <Head>
-                <title>Chat with {getRecipientEmail(chat.users, user)}</title>
-            </Head>
             <Sidebar/>
             <ChatContainer>
                 <ChatScreen  chat = {chat} messages={messages} />
