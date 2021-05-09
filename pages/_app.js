@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     if(user) {
       db.collection('users').doc(user.uid).set({
         email: user.email,
-        lastseen: firebase.firestore.FieldValue.serverTimestamp(),
+        lastSeen: firebase.firestore.FieldValue.serverTimestamp(),
         photoURL: user.photoURL,
       },
       {merge: true}
