@@ -8,6 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../firebase";
 import Chat from "./Chat";
+import SearchIcon from '@material-ui/icons/Search';
 
 function Sidebar() {
 

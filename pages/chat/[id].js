@@ -19,7 +19,7 @@ function Chat({ chat , messages }) {
     )
 }
 
-export default Chat;
+
 
 export async function getServerSideProps(context) {
     const ref = db.collection("chats").doc(context.query.id);
@@ -54,6 +54,8 @@ export async function getServerSideProps(context) {
         }
     }
 }
+
+export default Chat;
 
 const Container = styled.div`
     display:flex;
